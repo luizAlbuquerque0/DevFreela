@@ -11,7 +11,7 @@ using System.Threading.Tasks;
 
 namespace DevFreela.Application.Queries.GetUser
 {
-    internal class GetUserQueryHandler : IRequestHandler<GetUserQuery, UserViewModel>
+    public class GetUserQueryHandler : IRequestHandler<GetUserQuery, UserViewModel>
     {
         private readonly IUserRepository _userRepository;
         public GetUserQueryHandler(IUserRepository userRepostitory)
