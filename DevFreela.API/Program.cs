@@ -4,6 +4,7 @@ using DevFreela.Application.Validators;
 using DevFreela.Core.Repositories;
 using DevFreela.Core.Services;
 using DevFreela.infrastructure.Auth;
+using DevFreela.infrastructure.MessageBus;
 using DevFreela.infrastructure.Payments;
 using DevFreela.infrastructure.Persistence;
 using DevFreela.infrastructure.Persistence.Repositories;
@@ -33,6 +34,7 @@ builder.Services.AddScoped<IUserRepository, UserRepository>();
 builder.Services.AddScoped<ISkillRepository , SkillRepository>();
 builder.Services.AddScoped<IAuthService, AuthService>();
 builder.Services.AddScoped<IPaymentService, PaymentService>();
+builder.Services.AddScoped<IMessageBusService, MessageBusService>();
 
 builder.Services.AddHttpClient();
 
