@@ -2,6 +2,6 @@
 
 public interface IPaymentService
     {
-        Task<bool> ProcessPayment(PaymentInfoDTO paymentInfoDto);   
+        void ProcessPayment(PaymentInfoDTO paymentInfoDto);   
     }
 

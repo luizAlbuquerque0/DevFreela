@@ -22,7 +22,7 @@ namespace DevFreela.Application.Commands.FinishProject
 
             _paymentService.ProcessPayment(paymentInfoDto);
 
-            project.SetPaymentPending();
+             project.SetPaymentPending();
 
             await _projectRepository.SaveChangesAsync();
 

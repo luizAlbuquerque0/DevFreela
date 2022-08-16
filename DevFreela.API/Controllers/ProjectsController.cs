@@ -114,7 +114,7 @@ namespace DevFreela.API.Controllers
                 return BadRequest();
             }
 
-            return NoContent();
+            return Accepted();
         }
     }
 }
